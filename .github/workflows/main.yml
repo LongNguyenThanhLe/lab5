@@ -27,7 +27,11 @@ jobs:
 
       - name: Generate repo_info.txt with commit details
         run: |
-          echo "Branches in this repo (with details):" > repo_info.txt
+          echo "==== REMOTE INFO ====" > repo_info.txt
+          git remote -v >> repo_info.txt
+          echo "" >> repo_info.txt
+
+          echo "==== BRANCH INFO ====" >> repo_info.txt
           for branch in $(git for-each-ref --format='%(refname:short)' refs/heads/); do
             echo "" >> repo_info.txt
             echo "- $branch" >> repo_info.txt
