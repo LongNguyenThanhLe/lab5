@@ -1,4 +1,8 @@
-Branches in this repo (with details):
+==== REMOTE INFO ====
+origin	https://github.com/LongNguyenThanhLe/lab5 (fetch)
+origin	https://github.com/LongNguyenThanhLe/lab5 (push)
+
+==== BRANCH INFO ====
 
 - dependabot/docker/presidio-analyzer/python-3.13-windowsservercore
   SHA: 343c7d21f0b51902de10ca28b58631f2eef4b44c
@@ -28,11 +32,11 @@ Branches in this repo (with details):
     3f00a08 | Author: Dhouch Lee <34416808+pangchewe@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-10T19:39:52+07:00 | Added Thai National ID Number (TNIN) recognizer (#1713)
     5312d32 | Author: Omri Mendels <omri374@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-10T10:59:10+03:00 | test for custom recognizers (#1720)
 - main
-  SHA: b2db80d7840418e5e6c8381b864bf23652fbd717
-  Commits: 1357
+  SHA: 4ca756afc91ed153f2f47354dce11a4782ee1864
+  Commits: 1359
   Recent commits:
+    4ca756a | Author: LongNguyenThanhLe <149942804+LongNguyenThanhLe@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-18T17:59:44-04:00 | Add remote info to repo_info.txt generation
+    a37f9b2 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-09-18T21:57:44Z | Auto-update repo_info.txt
     b2db80d | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-09-18T21:57:05Z | Auto-update repo_info.txt
     120590a | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-09-18T21:55:41Z | Auto-update repo_info.txt
     38be1b8 | Author: LongNguyenThanhLe <149942804+LongNguyenThanhLe@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-18T17:55:29-04:00 | Refactor GitHub Actions workflow for repo info generation
-    67026d2 | Author: LongNguyenThanhLe <149942804+LongNguyenThanhLe@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-18T17:48:02-04:00 | Add GitHub Actions workflow for Lab5 checks
-    d9e6d9b | Author: Long Nguyen Thanh Le <tlenguye@emich.edu> | Committer: Long Nguyen Thanh Le <tlenguye@emich.edu> | Date: 2025-09-18T21:47:02Z | Add sample anonymization script for testing purposes
