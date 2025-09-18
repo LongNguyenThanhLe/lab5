@@ -1,0 +1,71 @@
+name: Lab5 Checks
+
+on:
+  push:
+    branches:
+      - main
+      - lab5
+  pull_request:
+
+jobs:
+  lab5-checks:
+    runs-on: ubuntu-latest
+
+    env:
+      GITHUB_USER: ${{ github.repository_owner }}
+
+    steps:
+      - name: Checkout repo with full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # ensure commit history
+
+      # ---- Generate repo_info.txt ----
+      - name: Generate repo info file
+        run: |
+          echo "==== REMOTE INFO ====" > repo_info.txt
+          git remote -v >> repo_info.txt
+          echo "" >> repo_info.txt
+          echo "==== BRANCH INFO ====" >> repo_info.txt
+          git branch -a >> repo_info.txt
+          echo "" >> repo_info.txt
+          echo "==== LOG HEAD (last 10 commits) ====" >> repo_info.txt
+          git log --oneline -n 10 >> repo_info.txt
+
+      - name: Commit repo_info.txt to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Only commit if repo_info.txt changed
+          if [ -n "$(git status --porcelain repo_info.txt)" ]; then
+            git add repo_info.txt
+            git commit -m "Update repo_info.txt [skip ci]"
+            git push origin HEAD:main
+          else
+            echo "No changes to repo_info.txt"
+          fi
+
+      # ---- Environment Setup ----
+      - name: Install Poetry
+        run: pipx install poetry
+
+      - name: Install dependencies
+        run: poetry install --all-extras
+
+      - name: Run tests with pytest
+        run: poetry run pytest
+
+      - name: Run Ruff style check
+        run: poetry run ruff check
+
+      - name: Run sample.py
+        run: |
+          cd presidio-anonymizer
+          poetry run python sample.py > sample_output.txt
+          echo "Sample output:"
+          cat sample_output.txt
+          if ! grep -q "My name is ${GITHUB_USER}" sample_output.txt; then
+            echo "❌ sample.py did not replace name with GitHub username"
+            exit 1
+          fi
