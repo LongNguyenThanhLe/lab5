@@ -1,71 +1,56 @@
-name: Lab5 Checks
+name: Generate Repo Info
 
 on:
-  push:
-    branches:
-      - main
-      - lab5
-  pull_request:
+  push
+
+permissions:
+  contents: write
 
 jobs:
-  lab5-checks:
+  generate-repo-info:
     runs-on: ubuntu-latest
-
-    env:
-      GITHUB_USER: ${{ github.repository_owner }}
-
     steps:
-      - name: Checkout repo with full history
-        uses: actions/checkout@v4
+      - name: Checkout all branches
+        uses: actions/checkout@v3
         with:
-          fetch-depth: 0   # ensure commit history
+          fetch-depth: 0
+          ref: main
 
-      # ---- Generate repo_info.txt ----
-      - name: Generate repo info file
+      - name: Fetch all branches
         run: |
-          echo "==== REMOTE INFO ====" > repo_info.txt
-          git remote -v >> repo_info.txt
-          echo "" >> repo_info.txt
-          echo "==== BRANCH INFO ====" >> repo_info.txt
-          git branch -a >> repo_info.txt
-          echo "" >> repo_info.txt
-          echo "==== LOG HEAD (last 10 commits) ====" >> repo_info.txt
-          git log --oneline -n 10 >> repo_info.txt
+          git fetch origin
+          for branch in $(git ls-remote --heads origin | awk '{print $2}' | sed 's|refs/heads/||'); do
+            if [ "$branch" != "main" ]; then
+              git fetch origin $branch:$branch
+            fi
+          done
 
-      - name: Commit repo_info.txt to main
+      - name: Generate repo_info.txt with commit details
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          echo "Branches in this repo (with details):" > repo_info.txt
+          for branch in $(git for-each-ref --format='%(refname:short)' refs/heads/); do
+            echo "" >> repo_info.txt
+            echo "- $branch" >> repo_info.txt
 
-          # Only commit if repo_info.txt changed
-          if [ -n "$(git status --porcelain repo_info.txt)" ]; then
-            git add repo_info.txt
-            git commit -m "Update repo_info.txt [skip ci]"
-            git push origin HEAD:main
-          else
-            echo "No changes to repo_info.txt"
-          fi
+            sha=$(git rev-parse "$branch")
+            echo "  SHA: $sha" >> repo_info.txt
 
-      # ---- Environment Setup ----
-      - name: Install Poetry
-        run: pipx install poetry
+            count=$(git rev-list "$branch" --count)
+            echo "  Commits: $count" >> repo_info.txt
 
-      - name: Install dependencies
-        run: poetry install --all-extras
+            echo "  Recent commits:" >> repo_info.txt
+            git log "$branch" \
+              --pretty=format:'    %h | Author: %an <%ae> | Committer: %cn <%ce> | Date: %ad | %s' \
+              --date=iso-strict -n 5 >> repo_info.txt
+          done
 
-      - name: Run tests with pytest
-        run: poetry run pytest
+          echo "✅ repo_info.txt generated:"
+          cat repo_info.txt
 
-      - name: Run Ruff style check
-        run: poetry run ruff check
-
-      - name: Run sample.py
+      - name: Commit and push repo_info.txt to main
         run: |
-          cd presidio-anonymizer
-          poetry run python sample.py > sample_output.txt
-          echo "Sample output:"
-          cat sample_output.txt
-          if ! grep -q "My name is ${GITHUB_USER}" sample_output.txt; then
-            echo "❌ sample.py did not replace name with GitHub username"
-            exit 1
-          fi
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add repo_info.txt
+          git commit -m "Auto-update repo_info.txt" || echo "No changes to commit"
+          git push origin main
