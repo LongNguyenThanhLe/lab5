@@ -4,15 +4,15 @@ origin	https://github.com/LongNguyenThanhLe/lab5 (push)
 
 ==== BRANCH INFO ====
 
-- dependabot/docker/presidio-analyzer/python-3.13-windowsservercore
-  SHA: 343c7d21f0b51902de10ca28b58631f2eef4b44c
-  Commits: 1355
+- dependabot/docker/presidio-analyzer/python-3.14-windowsservercore
+  SHA: d9df54702d4f7cf6ea077d2f8d2897ba76741d31
+  Commits: 1363
   Recent commits:
-    343c7d2 | Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-18T21:49:31Z | Bump python in /presidio-analyzer
-    67026d2 | Author: LongNguyenThanhLe <149942804+LongNguyenThanhLe@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-18T17:48:02-04:00 | Add GitHub Actions workflow for Lab5 checks
-    d9e6d9b | Author: Long Nguyen Thanh Le <tlenguye@emich.edu> | Committer: Long Nguyen Thanh Le <tlenguye@emich.edu> | Date: 2025-09-18T21:47:02Z | Add sample anonymization script for testing purposes
-    3f00a08 | Author: Dhouch Lee <34416808+pangchewe@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-10T19:39:52+07:00 | Added Thai National ID Number (TNIN) recognizer (#1713)
-    5312d32 | Author: Omri Mendels <omri374@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-10T10:59:10+03:00 | test for custom recognizers (#1720)
+    d9df547 | Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-11-01T09:21:23Z | Bump python in /presidio-analyzer
+    05221f1 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-13T10:53:16Z | Auto-update repo_info.txt
+    fbd3a12 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-01T09:42:18Z | Auto-update repo_info.txt
+    8307e41 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-09-18T21:59:59Z | Auto-update repo_info.txt
+    4ca756a | Author: LongNguyenThanhLe <149942804+LongNguyenThanhLe@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-18T17:59:44-04:00 | Add remote info to repo_info.txt generation
 - dependabot/docker/presidio-anonymizer/python-3.14-windowsservercore
   SHA: 4cb849b0a518f0a3a469cb6eba6133857d71032b
   Commits: 1363
@@ -59,11 +59,11 @@ origin	https://github.com/LongNguyenThanhLe/lab5 (push)
     4ca756a | Author: LongNguyenThanhLe <149942804+LongNguyenThanhLe@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-18T17:59:44-04:00 | Add remote info to repo_info.txt generation
     a37f9b2 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-09-18T21:57:44Z | Auto-update repo_info.txt
 - main
-  SHA: 05221f1eb7d2977de9aa73175dd46e90c8aa6bf0
-  Commits: 1362
+  SHA: 03a271c6a5a410331adaa8b0ba865f586b5810ae
+  Commits: 1363
   Recent commits:
+    03a271c | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-11-01T09:21:19Z | Auto-update repo_info.txt
     05221f1 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-13T10:53:16Z | Auto-update repo_info.txt
     fbd3a12 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-01T09:42:18Z | Auto-update repo_info.txt
     8307e41 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-09-18T21:59:59Z | Auto-update repo_info.txt
     4ca756a | Author: LongNguyenThanhLe <149942804+LongNguyenThanhLe@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-18T17:59:44-04:00 | Add remote info to repo_info.txt generation
-    a37f9b2 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-09-18T21:57:44Z | Auto-update repo_info.txt
