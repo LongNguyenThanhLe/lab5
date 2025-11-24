@@ -31,15 +31,15 @@ origin	https://github.com/LongNguyenThanhLe/lab5 (push)
     fbd3a12 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-01T09:42:18Z | Auto-update repo_info.txt
     8307e41 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-09-18T21:59:59Z | Auto-update repo_info.txt
     4ca756a | Author: LongNguyenThanhLe <149942804+LongNguyenThanhLe@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-18T17:59:44-04:00 | Add remote info to repo_info.txt generation
-- dependabot/github_actions/actions/checkout-5
-  SHA: 7af9c7662d44326f60ecd0f672353c6ffd1f10d7
-  Commits: 1358
+- dependabot/github_actions/actions/checkout-6
+  SHA: 3684062f29c3ccc0f9c4f650ca1d55f008ef44a2
+  Commits: 1365
   Recent commits:
-    7af9c76 | Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-18T21:57:33Z | Bump actions/checkout from 4 to 5
-    b2db80d | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-09-18T21:57:05Z | Auto-update repo_info.txt
-    120590a | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-09-18T21:55:41Z | Auto-update repo_info.txt
-    38be1b8 | Author: LongNguyenThanhLe <149942804+LongNguyenThanhLe@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-18T17:55:29-04:00 | Refactor GitHub Actions workflow for repo info generation
-    67026d2 | Author: LongNguyenThanhLe <149942804+LongNguyenThanhLe@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-18T17:48:02-04:00 | Add GitHub Actions workflow for Lab5 checks
+    3684062 | Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-11-24T10:32:45Z | Bump actions/checkout from 3 to 6
+    de40d50 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-11-01T09:21:46Z | Auto-update repo_info.txt
+    03a271c | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-11-01T09:21:19Z | Auto-update repo_info.txt
+    05221f1 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-13T10:53:16Z | Auto-update repo_info.txt
+    fbd3a12 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-01T09:42:18Z | Auto-update repo_info.txt
 - dependabot/github_actions/actions/github-script-8
   SHA: 6c3ca6c592f8db215a0df7345dd805db2d9429d4
   Commits: 1355
@@ -59,11 +59,11 @@ origin	https://github.com/LongNguyenThanhLe/lab5 (push)
     4ca756a | Author: LongNguyenThanhLe <149942804+LongNguyenThanhLe@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-18T17:59:44-04:00 | Add remote info to repo_info.txt generation
     a37f9b2 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-09-18T21:57:44Z | Auto-update repo_info.txt
 - main
-  SHA: 03a271c6a5a410331adaa8b0ba865f586b5810ae
-  Commits: 1363
+  SHA: de40d5019e54d7ded7c9a3c1f72ce6d12f91fa65
+  Commits: 1364
   Recent commits:
+    de40d50 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-11-01T09:21:46Z | Auto-update repo_info.txt
     03a271c | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-11-01T09:21:19Z | Auto-update repo_info.txt
     05221f1 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-13T10:53:16Z | Auto-update repo_info.txt
     fbd3a12 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-01T09:42:18Z | Auto-update repo_info.txt
     8307e41 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-09-18T21:59:59Z | Auto-update repo_info.txt
-    4ca756a | Author: LongNguyenThanhLe <149942804+LongNguyenThanhLe@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-18T17:59:44-04:00 | Add remote info to repo_info.txt generation
