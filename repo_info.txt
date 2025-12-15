@@ -31,6 +31,15 @@ origin	https://github.com/LongNguyenThanhLe/lab5 (push)
     fbd3a12 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-01T09:42:18Z | Auto-update repo_info.txt
     8307e41 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-09-18T21:59:59Z | Auto-update repo_info.txt
     4ca756a | Author: LongNguyenThanhLe <149942804+LongNguyenThanhLe@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-18T17:59:44-04:00 | Add remote info to repo_info.txt generation
+- dependabot/github_actions/actions/cache-5
+  SHA: 9dfbed202f0fa43ee42b030ed6e7e25e4b8f5dd9
+  Commits: 1366
+  Recent commits:
+    9dfbed2 | Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-12-15T09:37:48Z | Bump actions/cache from 4 to 5
+    6b9dfe6 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-11-24T10:32:59Z | Auto-update repo_info.txt
+    de40d50 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-11-01T09:21:46Z | Auto-update repo_info.txt
+    03a271c | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-11-01T09:21:19Z | Auto-update repo_info.txt
+    05221f1 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-13T10:53:16Z | Auto-update repo_info.txt
 - dependabot/github_actions/actions/checkout-6
   SHA: 3684062f29c3ccc0f9c4f650ca1d55f008ef44a2
   Commits: 1365
@@ -59,11 +68,11 @@ origin	https://github.com/LongNguyenThanhLe/lab5 (push)
     4ca756a | Author: LongNguyenThanhLe <149942804+LongNguyenThanhLe@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-18T17:59:44-04:00 | Add remote info to repo_info.txt generation
     a37f9b2 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-09-18T21:57:44Z | Auto-update repo_info.txt
 - main
-  SHA: de40d5019e54d7ded7c9a3c1f72ce6d12f91fa65
-  Commits: 1364
+  SHA: 6b9dfe64235316009e626484ad5975516163a0ce
+  Commits: 1365
   Recent commits:
+    6b9dfe6 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-11-24T10:32:59Z | Auto-update repo_info.txt
     de40d50 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-11-01T09:21:46Z | Auto-update repo_info.txt
     03a271c | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-11-01T09:21:19Z | Auto-update repo_info.txt
     05221f1 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-13T10:53:16Z | Auto-update repo_info.txt
     fbd3a12 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-01T09:42:18Z | Auto-update repo_info.txt
-    8307e41 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-09-18T21:59:59Z | Auto-update repo_info.txt
